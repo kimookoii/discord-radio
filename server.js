@@ -1,6 +1,6 @@
 const discord = require("discord.js");
 
-const client = new discord.Client();
+const ziclient = new discord.Client();
 
 const ytdl = require('ytdl-core');
 
@@ -14,12 +14,12 @@ Constants.DefaultOptions.ws.properties.$browser = `Discord iOS`;
 
 
 
-client.on('ready', async () => { console.log(`${client.user.tag} | [CODE ON]` )
+ziclient.on('ready', async () => { console.log(`${ziclient.user.tag} | RADIO ON` )
  
 setInterval(() => {
-const status = [  //`Whizkazz | anime lofi hip hop radio`,
+const status = [  `Whizkazz | #onteruss`,
                   `Whizkazz | 24/7 chill lofi remixes of anime`   ]
-client.user.setActivity(status[Math.floor(Math.random() * status.length)], {type : "LISTENING" }) }, 20000)    
+ziclient.user.setActivity(status[Math.floor(Math.random() * status.length)], {type : "LISTENING" }) }, 5000)    
                          
 
   
@@ -27,7 +27,7 @@ client.user.setActivity(status[Math.floor(Math.random() * status.length)], {type
                                 
                                 
                                 
-  let channel = client.channels.cache.get(CENEL) || await client.channels.fetch(CENEL)
+  let channel = ziclient.channels.cache.get(CENEL) || await ziclient.channels.fetch(CENEL)
 
   if(!channel) return;
   const connection = await channel.join();
@@ -41,8 +41,8 @@ client.user.setActivity(status[Math.floor(Math.random() * status.length)], {type
 
 
 setInterval(async function() {
-  if(!client.voice.connections.get(SERPER)) {
-    let channel = client.channels.cache.get(CENEL) || await client.channels.fetch(CENEL)
+  if(!ziclient.voice.connections.get(SERPER)) {
+    let channel = ziclient.channels.cache.get(CENEL) || await ziclient.channels.fetch(CENEL)
     if(!channel) return;
 
     const connection = await channel.join()
@@ -55,4 +55,4 @@ setInterval(async function() {
 
 
 
-client.login(process.env.TOKEN)
+ziclient.login(process.env.TOKEN)
