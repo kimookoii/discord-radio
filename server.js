@@ -18,7 +18,7 @@ ziclient.on('ready', async () => { console.log(`${ziclient.user.tag} | RADIO ON`
  
 setInterval(() => {
 const status = [  `Whizkazz | #onteruss`,
-                  `Whizkazz | 24/7 chill lofi remixes of anime`   ]
+                  `Whizkazz | 24/7 radio anime musik indonesia`   ]
 ziclient.user.setActivity(status[Math.floor(Math.random() * status.length)], {type : "LISTENING" }) }, 5000)    
                          
 
