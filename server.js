@@ -1,34 +1,58 @@
-// server.js
-// where your node app starts
+const discord = require("discord.js");
 
-// we've started you off with Express (https://expressjs.com/)
-// but feel free to use whatever libraries or frameworks you'd like through `package.json`.
-const express = require("express");
-const app = express();
+const client = new discord.Client();
 
-// our default array of dreams
-const dreams = [
-  "Find and count some sheep",
-  "Climb a really tall mountain",
-  "Wash the dishes"
-];
+const ytdl = require('ytdl-core');
 
-// make all the files in 'public' available
-// https://expressjs.com/en/starter/static-files.html
-app.use(express.static("public"));
+const { CENEL, SERPER, LINKYUTUP } = require("./ziccc.json");
 
-// https://expressjs.com/en/starter/basic-routing.html
-app.get("/", (request, response) => {
-  response.sendFile(__dirname + "/views/index.html");
-});
+const { Constants } = require('discord.js');
+Constants.DefaultOptions.ws.properties.$browser = `Discord iOS`;
 
-// send the default array of dreams to the webpage
-app.get("/dreams", (request, response) => {
-  // express helps us take JS objects and send them as JSON
-  response.json(dreams);
-});
 
-// listen for requests :)
-const listener = app.listen(process.env.PORT, () => {
-  console.log("Your app is listening on port " + listener.address().port);
-});
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+client.on('ready', async () => { console.log(`${client.user.tag} | [CODE ON]` )
+ 
+setInterval(() => {
+const status = [  //`Whizkazz | anime lofi hip hop radio`,
+                  `Whizkazz | 24/7 chill lofi remixes of anime`   ]
+client.user.setActivity(status[Math.floor(Math.random() * status.length)], {type : "LISTENING" }) }, 20000)    
+                         
+
+  
+////////////////////////////////////////////////////////////////////////////////////////////////////
+                                
+                                
+                                
+  let channel = client.channels.cache.get(CENEL) || await client.channels.fetch(CENEL)
+
+  if(!channel) return;
+  const connection = await channel.join();
+  connection.play(ytdl(LINKYUTUP))
+})
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+setInterval(async function() {
+  if(!client.voice.connections.get(SERPER)) {
+    let channel = client.channels.cache.get(CENEL) || await client.channels.fetch(CENEL)
+    if(!channel) return;
+
+    const connection = await channel.join()
+    connection.play(ytdl(LINKYUTUP))
+  }
+}, 20000)
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+client.login(process.env.TOKEN)
