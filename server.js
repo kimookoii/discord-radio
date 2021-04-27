@@ -47,63 +47,56 @@
 
 // 0
     const CronJob0 = require("cron").CronJob;
-    var job = new CronJob0('0 0 * * * *', function() {
+    var job = new CronJob0('0 0 * * *', function() {
     require('child_process').exec("refresh") 
     }, null, true, 'Asia/Jakarta');
     job.start();
 
 // 3
     const CronJob3 = require("cron").CronJob;
-    var job = new CronJob3('0 3 * * * *', function() {
+    var job = new CronJob3('0 3 * * *', function() {
     require('child_process').exec("refresh") 
     }, null, true, 'Asia/Jakarta');
     job.start();
 
 // 6
     const CronJob6 = require("cron").CronJob;
-    var job = new CronJob6('0 6 * * * *', function() {
+    var job = new CronJob6('0 6 * * *', function() {
     require('child_process').exec("refresh") 
     }, null, true, 'Asia/Jakarta');
     job.start();
 
 // 9
     const CronJob9 = require("cron").CronJob;
-    var job = new CronJob9('0 9 * * * *', function() {
+    var job = new CronJob9('0 9 * * *', function() {
     require('child_process').exec("refresh") 
     }, null, true, 'Asia/Jakarta');
     job.start();
 
 // 12
     const CronJob12 = require("cron").CronJob;
-    var job = new CronJob12('0 12 * * * *', function() {
+    var job = new CronJob12('0 12 * * *', function() {
     require('child_process').exec("refresh") 
     }, null, true, 'Asia/Jakarta');
     job.start();
 
 // 15
     const CronJob15 = require("cron").CronJob;
-    var job = new CronJob15('0 15 * * * *', function() {
+    var job = new CronJob15('0 15 * * *', function() {
     require('child_process').exec("refresh") 
     }, null, true, 'Asia/Jakarta');
     job.start();
 
 // 18
     const CronJob18 = require("cron").CronJob;
-    var job = new CronJob18('0 18 * * * *', function() {
+    var job = new CronJob18('0 18 * * *', function() {
     require('child_process').exec("refresh") 
     }, null, true, 'Asia/Jakarta');
     job.start();
 
 // 21
     const CronJob21 = require("cron").CronJob;
-    var job = new CronJob21('0 21 * * * *', function() {
-    require('child_process').exec("refresh") 
-    }, null, true, 'Asia/Jakarta');
-    job.start();
-
-// 24
-    const CronJob24 = require("cron").CronJob;
-    var job = new CronJob24('0 24 * * * *', function() {
+    var job = new CronJob21('0 21 * * *', function() {
     require('child_process').exec("refresh") 
     }, null, true, 'Asia/Jakarta');
     job.start();
