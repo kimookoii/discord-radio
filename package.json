@@ -1,10 +1,10 @@
 {
-  "name": "WhizRadio",
+  "name": "discord-radio",
   "version": "0.0.1",
-  "description": "A simple Radio | Whizkazz",
-  "main": "server.js",
+  "description": "A simple radio 24/7 in vc-channel | Whizkazz",
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node index.js"
   },
   "dependencies": {
     "discord.js": "^12.5.2",
