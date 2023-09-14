@@ -1,7 +1,7 @@
 {
   "name": "discord-radio",
   "version": "0.0.1",
-  "description": "A simple radio 24/7 in vc-channel | Whizkazz",
+  "description": "A simple radio 24/7 in vc-channel | ziconkn_",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"

@@ -1,6 +1,8 @@
 const ytdl = require("ytdl-core");
 
 const { Discord, Constants } = require("discord.js");
+
+// online mobile
 Constants.DefaultOptions.ws.properties.$browser = `Discord iOS`;
 
 process.setMaxListeners(0);
