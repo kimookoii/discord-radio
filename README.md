@@ -27,19 +27,19 @@ Bot ini juga memiliki sistem **auto reconnect** dan **auto refresh** untuk menja
 
 ## ⚙️ Instalasi dan Penggunaan
 
-### 1️⃣ Clone Repositori
+### 1. Clone Repositori
 ```bash
 git clone https://github.com/kimookoii/discord-radio.git
 cd discord-radio
 ````
 
-### 2️⃣ Instal Dependensi
+### 2. Instal Dependensi
 
 ```bash
 npm install
 ```
 
-### 3️⃣ Konfigurasi
+### 3. Konfigurasi
 
 Buat file `config.json` di folder utama seperti berikut:
 
@@ -65,7 +65,7 @@ Buat file `config.json` di folder utama seperti berikut:
 }
 ```
 
-### 4️⃣ Tambahkan Token Bot ke Environment Variable
+### 4. Tambahkan Token Bot ke Environment Variable
 
 Buat file `.env` (atau tambahkan secara manual di sistem host):
 
@@ -75,7 +75,7 @@ TOKEN2=token_bot_kedua
 TOKEN3=token_bot_ketiga
 ```
 
-### 5️⃣ Jalankan Bot
+### 5. Jalankan Bot
 
 ```bash
 node index.js
