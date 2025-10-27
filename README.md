@@ -21,7 +21,7 @@ Bot ini juga memiliki sistem **auto reconnect** dan **auto refresh** untuk menja
 - [discord.js](https://discord.js.org/) — Library utama untuk Discord API  
 - [ytdl-core](https://www.npmjs.com/package/ytdl-core) — Streaming audio dari YouTube  
 - [cron](https://www.npmjs.com/package/cron) — Penjadwalan auto refresh  
-- Node.js (v16+ disarankan)
+- Node.js (v12.x)
 
 ---
 
@@ -108,7 +108,8 @@ Proyek ini dirilis di bawah lisensi **MIT License** — kamu bebas menggunakan, 
 
 ## ✨ Kontributor
 
-Dikembangkan oleh [@kimookoii](https://github.com/kimookoii)
+Dikembangkan oleh [zicc](https://github.com/kimookoii)
+
 💬 Nikmati siaran musik nonstop di Discord kamu dengan Discord Radio Bot!
 
 ```
