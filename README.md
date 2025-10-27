@@ -108,7 +108,7 @@ Proyek ini dirilis di bawah lisensi **MIT License** — kamu bebas menggunakan, 
 
 ## ✨ Kontributor
 
-Dikembangkan oleh [zicc](https://github.com/kimookoii)
+Made with ❤️ by [zicc](https://github.com/kimookoii)
 
 💬 Nikmati siaran musik nonstop di Discord kamu dengan Discord Radio Bot!
 
