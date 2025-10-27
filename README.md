@@ -29,8 +29,8 @@ Bot ini juga memiliki sistem **auto reconnect** dan **auto refresh** untuk menja
 
 ### 1️⃣ Clone Repositori
 ```bash
-git clone https://github.com/username/discord-radio-bot.git
-cd discord-radio-bot
+git clone https://github.com/kimookoii/discord-radio.git
+cd discord-radio
 ````
 
 ### 2️⃣ Instal Dependensi
