@@ -112,4 +112,4 @@ Dikembangkan oleh [zicc](https://github.com/kimookoii)
 
 💬 Nikmati siaran musik nonstop di Discord kamu dengan Discord Radio Bot!
 
-```
+---
